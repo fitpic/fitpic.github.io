@@ -42,10 +42,12 @@
   </style>
   <body>
 
-
-    <video autoplay muted loop id="myVideo">
+    <div class="video-container">
+      <video autoplay muted loop id="myVideo">
       <source src="background-vid.mp4" type="video/mp4">
-    </video>
+      </video>
+    </div>
+    
       
       <div class="header">
         <div class="title-container">
@@ -109,7 +111,7 @@
           
            <div class="container">
                <div class="row">
-                   <div class="col-sm">
+                   <div class="center col-sm">
                        
                        <div class = "testimonial">
                            <div class = "testimonial-card">
@@ -119,7 +121,7 @@
                        </div>
                        
                    </div>
-                   <div class="col-sm">
+                   <div class="center col-sm">
                        
                        <div class = "testimonial">
                            <div class = "testimonial-card">
@@ -129,7 +131,7 @@
                        </div>
           
                 </div>
-                <div class="col-sm">
+                <div class="center col-sm">
                     
                     <div class = "testimonial">
                         <div class = "testimonial-card">
@@ -199,8 +201,11 @@
          <h1 class= "center about">About</h1>
              <p class= "center about-description-text">FitPic provides athletes with data-driven solutions so they can reach their goals faster and easier.</p>
              <h2 class= "center contact">Contact</h2>
-             <p class= "center contact-description-text">Have any questions or business enquiries?</p>
-             <p class= "center email-us-text">Send us a message at team@fitpic.co</p>
+             <div class= "email-us-text">
+                 <p class= "center ">Have any questions or business enquiries?</p>
+                 <p class= "center ">Send us a message at team@fitpic.co</p>
+            </div>
+             
           </div>
       
   </body>
