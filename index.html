@@ -42,7 +42,7 @@
   </style>
   <body>
 
-    <div class="video-container">
+    <div class="video-container" id="vid">
       <video autoplay muted loop id="myVideo">
       <source src="background-vid.mp4" type="video/mp4">
       </video>
@@ -52,7 +52,7 @@
       <div class="header">
         <div class="title-container">
             <h1 class="main-title"> FitPic</h1>
-            <h2 class="sub-title"> Do you know your body?</h2>
+            <h2 class="sub-title"> The Smart body app</h2>
 <!--            <h2 class="sub-title"> Know your body with Machine Learning</h2>-->
 <!--            <button class="learn-more-btn">Learn more</button>-->
         </div>
@@ -92,7 +92,7 @@
                     <div class="mockup-card">
                            <div class="center-vert">
                         <p class="feature-num">3</p>
-                        <p class="feature-text"> See your Body Results</p>
+                        <p class="feature-text"> See your Body Fat %</p>
                     </div>
 
 
@@ -103,42 +103,70 @@
               </div>
           </div>
         </div>
+  
+
 
 
       <div class="section-3">
 
      <h1 class= "center testimonials-text">Testimonials</h1>
+          
+        
 
            <div class="container">
                <div class="row">
                     <div class="col-sm-12 col-md-4">
 
-                       <div class = "testimonial">
-                           <div class = "testimonial-card">
+        <figure class="snip1192">
+  <blockquote> Very useful. I use a bio-electric impedance scale, but if an app did that it would be sick</blockquote>
+  <div class="author">
+    <img src="Austin-Dunham.jpg" alt="sq-sample1"/>
+      <h5>Austin Dunham <span> Top 20 Bodybuilding Youtubers <br/>(700k+ Subcribers)</span></h5>
+  </div>
+</figure>
+<!--
+                           <div class = "center testimonial-card">
                                 <p class= "center quote-testimonial">"Very useful. I use a bio-electric impedance scale, but if an app did that it would be sick"</p>
-                            </div>
-                           <p class= "center testimonial-author-text">-Austin Dunham, Fitness Youtuber <br/> (50M+ total views)</p>
+                               <p class= "center testimonial-author-text">-Austin Dunham, Fitness Youtuber <br/> (50M+ total views)</p>
+                           </div>
+-->
                        </div>
 
-                   </div>
                    <div class="col-sm-12 col-md-4">
 
+                       <figure class="snip1192">
+  <blockquote>I would love to see that app. That could go viral if it works.</blockquote>
+  <div class="author">
+    <img src="John-Sonmez-Small.jpg" alt="sq-sample29"/>
+    <h5>John Sonmez<span>  Best-selling author & youtuber <br/>(20 Million+ Views) </span></h5>
+  </div>
+</figure>
+<!--
                        <div class = "testimonial">
                            <div class = "testimonial-card">
                                <p class= "center quote-testimonial">"I would love to see that app. That could go viral if it works"</p>
+                               <p class= "center testimonial-author-text">-John Sonmez, Best-selling author & Fitness youtuber (20M+ total views) </p>
                            </div>
-                            <p class= "center testimonial-author-text">-John Sonmez, Best-selling author & Fitness youtuber (20M+ total views) </p>
                        </div>
+-->
 
                 </div>
                  <div class="col-sm-12 col-md-4">
-
+<figure class="snip1192 hover">
+  <blockquote>The app is easy to use and well tested (by me)</blockquote>
+  <div class="author">
+    <img src="insta_final.jpg" alt="sq-sample24"/>
+      <h5>Hillary<span> Fitness influencer & Head of Testing @FitPic</span></h5>
+  </div>
+</figure>
+<!--
                     <div class = "testimonial">
                         <div class = "testimonial-card">
-                            <p class= "center quote-testimonial">"The app is easy to use and well tested "</p>
+                            <p class= "quote-testimonial" style="color:pink">"The app is easy to use and well tested "</p>
+                            <p class= "testimonial-author-text" >-Hillary, fitness influencer</p>
                         </div>
-                        <p class= "center testimonial-author-text">-Hillary, fitness enthusiast</p>
                    </div>
+-->
 
                 </div>
               </div>
@@ -224,6 +252,22 @@
 
 
           </div>
+      
+      <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+          var currentScrollPos = window.pageYOffset;
+//          console.log("prev: " +prevScrollpos);
+//          console.log("curr: " +currentScrollPos);
+          if (600 > currentScrollPos) {
+        document.getElementById("vid").style.display = "block";
+              console.log("show vid again yay");
+         } else {
+          document.getElementById("vid").style.display = "none";
+         }
+//        prevScrollpos = currentScrollPos;
+        }
+    </script>
 
   </body>
 </html>
