@@ -31,7 +31,7 @@ body{
     width:100%;
     overflow: hidden;
     border:0;
-    height:75vh;
+    height:65vh;
 /*    background-color: red;*/
     background-image: linear-gradient(
       to right bottom,
@@ -68,8 +68,8 @@ body{
 /*    background-color: red;*/
     background-image: linear-gradient(
       to right bottom,
-        rgba(110,237,235,0.80),
-        rgba(119,252,135,0.80)),
+        rgba(110,237,235,0.85),
+        rgba(119,252,135,0.85)),
         url("two-woman-plank.jpg");
     display: grid;
     background-size: cover;
@@ -105,11 +105,6 @@ body{
     background-size: cover;
     clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
     
-}
-
-
-.title-container {
-    margin-top:80px;;
 }
 
 
@@ -205,8 +200,24 @@ body{
 /*--------TITLES, TEXT, ETC-----------*/
 
 .main-title {
+    margin-top:80px;
+    position: absolute;
+   top: 25%;
+   left: 50%; 
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%); 
+   -ms-transform: translate(-50%, -50%); 
+   -o-transform: translate(-50%, -50%); 
+   transform: translate(-50%, -50%);
+   
+    width:100%;
+    max-width: 700px;
+/*
+    position: absolute;
+    top:5%;
     text-align: center;
     display: block;
+*/
     padding: 0;
     margin:0;
     font-size: 1000%;
@@ -224,6 +235,8 @@ body{
 }
 
 .sub-title{
+    position: absolute;
+    top: 40%;
     width:100%;
     margin: 0 5%;
     display: block;
@@ -404,7 +417,7 @@ video {
   -ms-transform:scale(1.5);
 */
 
-  transform:scale(2);
+  transform:scale(3);
   max-height: 70vh;
    
 }
@@ -713,6 +726,9 @@ body {
         padding-top: 0px;
         width:100vw;
         height:50vh;
+        display: flex;
+        align-content: center;
+        justify-content: center;
     }
     
      .section-2 {
