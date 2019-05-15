@@ -1,3 +1,9 @@
+/*--------IMPORTS-----------*/
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
+
+
 /*--------OVERALL WEBSITE-----------*/
 body{
     margin:0;
@@ -9,272 +15,116 @@ body{
 
 
 
-/*--------SECTIONS-----------*/
+/*--------SECTION 1 - HEADER --------------------*/
 
-.container{
-    width: 100vw;
-}
 .video-container{
     
-    width: 100%;
+    width: 97%;
     overflow:hidden;
-    display:block;
-    height: 80vh;
+/*    display:block;*/
+    height: 100%;
     z-index: -1;
     position: fixed;
     left: 0;
     top: 0;
 }
-.header {
+
+video {
+  z-index: -1;
+  position: block;*/
+  left: 0;
+  top: 0;
+  width: 100%;
+  transform:scale(3);
+/*  max-height: 70vh;*/
+   
+}
+
+.section-1 { 
     margin-top: 0px;
     padding-top:5%;
     width:100%;
     overflow: hidden;
     border:0;
-    height:65vh;
-/*    background-color: red;*/
+    height:50vh;
     background-image: linear-gradient(
       to right bottom,
         rgba(110,237,235,0.86),
         rgba(119,252,135,0.86));
-    
     background-size: cover;
     background-position: top;
-    
-    clip-path: polygon(0 0,100% 0, 100% 100%, 0 90%);
-  display: inline-block;
+/*    clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);*/
+    display: inline-block;
+}
+
+.main-title {
+    display: block;
+    margin-top:80px;
+    position: absolute;
+   top: 22%;
+   left: 52%; 
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%); 
+   -ms-transform: translate(-50%, -50%); 
+   -o-transform: translate(-50%, -50%); 
+   transform: translate(-50%, -50%);
+    width:100%;
+    max-width: 580px;
+    padding: 0;
+    margin:0;
 }
 
 
+
+/*--------------END--------------------*/
+
+
+
+
+
+/*--------SECTION 2 - HOW IT WORKS ------------ --*/
 
 .section-2 {
     padding: 100px 0px;
     margin-top: -90px;
     width:100%;
     border:0;
-    height:100vh;
+    height:100%;
     background-color: white;
-    display: grid;
-    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
-    
-}
-
-.section-3 {
-    padding: 100px 0px;
-    margin-top: -90px;
-    width:100%;
-    border:0;
-    height:105vh;
-/*    background-color: red;*/
-    background-image: linear-gradient(
-      to right bottom,
-        rgba(110,237,235,0.85),
-        rgba(119,252,135,0.85)),
-        url("two-woman-plank.jpg");
-    display: grid;
-    background-size: cover;
-    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
-    
-}
-
-.section-4 {
-    padding: 80px 0px;
-    margin-top: -85px;
-    width:100%;
-    border:0;
-    height:105vh;
-    background-color: white;
-    display: grid;
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-    
-}
-
-.section-5 {
-    padding: 260px 0px;
-    margin-top: -80px;
-    width:100%;
-    border:0;
-    height:80vh;
-/*    background-color: red;*/
-    background-image: linear-gradient(
-      to right bottom,
-        rgba(110,237,235,0.90),
-        rgba(119,252,135,0.90)),
-        url("gym-men-woman.jpg");
-    display: grid;
-    background-size: cover;
-    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
-    
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);  
 }
 
 
-
-/*--------CONTAINERS-----------*/
-
-.center{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.center-vert{
-/*   text-align: center;*/
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.center-horiz{
-   text-align: center;
-    display: table-cell;
-}
-
-.feature-box{
-    width: 100px;
-    border: solid 1px grey;
-}
-
-.mockup-card {
-     transition: all .2s ease-in-out;
-}
-
-.mockup-card:hover { transform: scale(1.1); }
-
-
-.testimonial-card{
-/*
-    display: flex;
-    justify-content: center;
-    align-content: center;
-*/
-    height: 250px;
-    padding:20px;
-    width: 80%;
-    background-color: rgba(250,250,250,0.9);
-    border-radius: 8px;
-    
-}
-
-.testimonial-card:hover { 
-    background-color: rgba(258,258,258,0.95);
-    
-}
-
-.testimonial {
-    transition: all .2s ease-in-out;
-}
-
-.testimonial:hover { transform: scale(1.1); }
-
-.testimonials {
-/*
-    display: flex;
-    align-content: center;
-*/
-}
-
-
-.tech-card{
-    padding:20px;
-    width: 100%;
-    text-align: center;
-/*    background-color: rgba(210,210,210,0.7);*/
-    border-radius: 8px;
-    transition: all .2s ease-in-out;
-    
-}
-
-/*.tech-card:hover { transform: scale(1.2); }*/
-
-
-.tech-feature-cards{
-    margin-top: -60px;
-}
-
-.about-col {
-    padding-right:60px !important;
-}
-/*--------------END--------------------*/
-
-
-
-/*--------TITLES, TEXT, ETC-----------*/
-
-.main-title {
-    margin-top:80px;
-    position: absolute;
-   top: 25%;
-   left: 50%; 
-   -webkit-transform: translate(-50%, -50%);
-   -moz-transform: translate(-50%, -50%); 
-   -ms-transform: translate(-50%, -50%); 
-   -o-transform: translate(-50%, -50%); 
-   transform: translate(-50%, -50%);
-   
-    width:100%;
-    max-width: 700px;
-/*
-    position: absolute;
-    top:5%;
-    text-align: center;
-    display: block;
-*/
-    padding: 0;
-    margin:0;
-    font-size: 1000%;
-
-        /*  background-color: rgba(0,0,0,0.3);*/
-  color:white;
-/*  font-family: Zilla Slab Highlight;*/
-/*    Zilla Slab Highlight,Ramabhadra ,Noto Sans KR;*/
-    justify-content: center;
-    align-content: center;
-    letter-spacing: 10px;
-    font-family: Code-Pro-Demo;
-	font-weight: normal;
-	font-style: normal; 
-}
-
-.sub-title{
-    position: absolute;
-    top: 40%;
-    width:100%;
-    margin: 0 5%;
-    display: block;
-    text-align: center;
-    margin:0px;
-    padding-top: 15px;
-    color:white;
-    font-family: Code-Pro-Demo;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
+.section-2-text{
+    color:  rgba(140,140,140,1);
+    font-family: Code-Pro-Demo; 
+    padding-bottom: 60px;
 }
 
 .feature-num{
    display: inline-block;
    width: 50px;
    height:50px;
-    margin-right: 15px;
-    padding: 0;
+   margin-right: 10px;
+   padding: 0;
    font-size:25px;
    font-family: Code-Pro-Demo; 
    color: white;
-   text-align: center;
    background-image: linear-gradient(
       to right bottom,
         rgba(110,237,235,0.80),
         rgba(119,252,135,0.80));
     border-radius: 50%;
-/*    border: solid 4px rgba(225,225,225,1);*/
     float:left;
     text-align: center;
-    letter-spacing: 0px;
-    
 }
 
+.mockup-card:hover { transform: scale(1.1); }
+
 .feature-text{
+    width: 100%;
+    margin-bottom: 20px;
     color:  rgba(160,160,160,1);
-       
-/*        rgba(106,126,133,1);*/
     align-content: center;
     font-family: Code-Pro-Demo; 
     line-height: 25px;
@@ -283,156 +133,46 @@ body{
     height: 50px;
 }
 
-.about{
-    font-size: 60px;
-/*    padding: 0px 0px 20px 0px;*/
-    font-family: Code-Pro-Demo; 
-      color: white;
-/*      color: rgba(100,100,100,1);*/
-      text-align: left;
+.feature-1-img {
+    width:70%;
+    transition: all .2s ease-in-out;
 }
 
-.contact {
-    font-size: 60px;
-    color: white;
-/*    padding: 30px 0px 20px 0px;*/
-    font-family: Code-Pro-Demo;
-/*    color: rgba(100,100,100,1);*/
-    text-align: left;
-}
+/*.feature-1-img:hover { transform: scale(1.1); }*/
 
-.section-2-text{
-    color:  rgba(140,140,140,1);
-    font-family: Code-Pro-Demo; 
-    padding-bottom: 60px;
-}
+/*--------------END --------------------*/
 
-.mockup-text{
-   
+
+
+
+/*--------SECTION 3 - TESTIMONIALS ------------ --*/
+
+.section-3 {
+    display: block;
+    padding: 100px 0px;
+    margin-top: -90px;
+    width:100%;
+    border:0;
+    height:100%;
+    background-image: linear-gradient(
+      to right bottom,
+        rgba(110,237,235,0.9),
+        rgba(119,252,135,0.9)),
+        url("two-woman-plank.jpg");
+    background-size: cover;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 90%);
 }
 
 .testimonials-text{
     font-family: Code-Pro-Demo; 
     font-size: 60px;
     color: white;
-    
-/*
-    padding-top: 20px;
-    padding-bottom: 20px;
-*/
+    padding-bottom: 40px;
 }
 
-.quote-testimonial{
-/*    height:0px;*/
-    text-align: center;
-    line-height: 25px;
-    color:  rgba(140,140,140,1);
-    font-size: 25px;
-    font-style: italic;
-}
-
-.testimonial-author-text{
-    padding-top: 20px;
-    font-family: Code-Pro-Demo; 
-    font-size: 20px;
-}
-
-.science-text{
-    font-family: Code-Pro-Demo; 
-    font-size: 60px;
-    color: rgba(140,140,140,1);
-    padding-top: 40px;
-}
-
-.tech-feature-title {
-    font-family: Code-Pro-Demo; 
-    color: rgba(90,90,90,1);
-    font-size: 20px;
-    padding-bottom: 20px;
-}
-
-.about-description-text{
-      color: white;
-    font-size: 20px;
-      color: rgba(100,100,100,1);
-    
-}
-
-.email-us-text {
-    
-    font-size: 20px;
-    color: rgba(100,100,100,1);
-    }
-/*--------------END--------------------*/
-
-
-
-/*-------IMAGES----------*/
-
-.feature-1-img {
-    width:70%;
-    transition: all .2s ease-in-out;
-}
-
-.feature-1-img:hover { transform: scale(1.1); }
-/*--------------END--------------------*/
-
-
-/*-------BUTTONS----------*/
-.learn-more-btn{
-    width:180px;
-    height: 60px;
-    border-radius: 0%;
-    align-content: center;
-    font-family: Code-Pro-Light-Demo; 
-    line-height: 25px;
-    font-size: 25px;
-    display: block;
-    color:white;
-    text-align: center;
-background-image: linear-gradient(-60deg, rgb(255, 179, 15), rgb(255, 207, 66));
-
-
-
-/*    border: solid 4px rgba(225,225,225,1);*/
-    
-}
-
-/*--------------END--------------------*/
-
-/*-------ADVANCED TAGS, VIDEOS, WIDGETS----------*/
-video {
-  z-index: -1;
-  position: block;*/
-  left: 0;
-  top: 0;
-  width: 100vw;
-
-/*
-     
-    
-  -moz-transform:scale(1.5);
-  -webkit-transform:scale(1.5);
-  -o-transform:scale(1.5);
-  -ms-transform:scale(1.5);
-*/
-
-  transform:scale(3);
-  max-height: 70vh;
-   
-}
-/*--------------END--------------------*/
-
-/*--------------TESTIMONIAL--------------------*/
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
-
-.hover-enlarge:hover {
-/*    transform: scale(1.3);*/
-}
-
-figure.snip1192 {
+figure.testimonials-container {
   margin-bottom: 20px;
+/*  font-family: Code-Pro-Demo; */
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
   overflow: hidden;
@@ -445,11 +185,11 @@ figure.snip1192 {
   box-shadow: none !important;
 }
 
-figure.snip1192 * {
+figure.testimonials-container * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-figure.snip1192 img {
+figure.testimonials-container img {
   max-width: 100%;
   height: 100px;
   width: 100px;
@@ -459,10 +199,13 @@ figure.snip1192 img {
   z-index: 1;
   position: relative;
 }
-figure.snip1192 blockquote {
+figure.testimonials-container blockquote {
+/*  font-family: Code-Pro-Demo; */
+  font-family: 'Raleway', Arial, sans-serif;
   margin: 0;
   display: block;
   border-radius: 8px;
+/*  font-family: Code-Pro-Demo;*/
   position: relative;
   background-color: #fafafa;
   padding: 30px 50px 65px 50px;
@@ -472,8 +215,8 @@ figure.snip1192 blockquote {
   line-height: 1.6em;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
-figure.snip1192 blockquote:before,
-figure.snip1192 blockquote:after {
+figure.testimonials-container blockquote:before,
+figure.testimonials-container blockquote:after {
   font-family: 'FontAwesome';
   content: "\201C";
   position: absolute;
@@ -481,61 +224,88 @@ figure.snip1192 blockquote:after {
   opacity: 0.3;
   font-style: normal;
 }
-figure.snip1192 blockquote:before {
+figure.testimonials-container blockquote:before {
   top: 35px;
   left: 20px;
 }
-figure.snip1192 blockquote:after {
+figure.testimonials-container blockquote:after {
   content: "\201D";
   right: 20px;
   bottom: 35px;
 }
-figure.snip1192 .author {
+figure.testimonials-container .author {
   margin: 0;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
 }
-figure.snip1192 .author h5 {
-  opacity: 0.8;
+figure.testimonials-container .author h5 {
+  padding: 5px;
+  background: rgba(50,50,50,0.1);
+  opacity: 1;
   margin: 0;
   font-weight: 800;
 }
-figure.snip1192 .author h5 span {
+figure.testimonials-container .author h5 span {
   font-weight: 400;
   text-transform: none;
   display: block;
 }
-/* Demo purposes only */
-body {
-  background-color: #212121;
+/*--------------END-------------------*/
+
+
+/*--------SECTION 4 - TECHNOLOGY ------------ --*/
+
+.section-4 {
+    display: block;
+    padding: 0px 0px;
+    width:100%;
+    border:0;
+    height:100%;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
 }
 
 
-/*--------------END--------------------*/
+.tech-card{
+    padding:20px;
+    width: 100%;
+    height: 100%;
 
-
-/*--------------FLIPPABLE-CARDS--------------------*/
-/*
-body {
-  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
-  margin: 12px 0;
+    text-align: center;
+/*    background-color: rgba(210,210,210,0.7);*/
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
 }
-*/
+
+.science-text{
+    font-family: Code-Pro-Demo; 
+    font-size: 60px;
+    color: rgba(140,140,140,1);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.tech-feature-title {
+    font-family: Code-Pro-Demo; 
+    color: rgba(90,90,90,1);
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
 .card-container {
   text-align: center;
   cursor: pointer;
-  height: 330px;
   perspective: 600;
-  position: relative;
   width: 100%;
   border: none;
 
 }
 .card {
   text-align: center;
-  border: none;
-  height: 100%;
+  border:  0.4px solid rgba(120,120,120,1);
+/*  border: none !important;*/
+  height: 350px;
   position: absolute;
   transform-style: preserve-3d;
   transition: all 0.6s ease-in-out;
@@ -548,13 +318,14 @@ body {
 .card .side {
   backface-visibility: hidden;
   border-radius: 6px;
-  border: 0.4px solid rgba(120,120,120,1);
+/*  border: 0.4px solid rgba(120,120,120,1);*/
   height: 100%;
   position: absolute;
   overflow: hidden;
   width: 100%;
 }
 .card .back {
+  height: 100%;
   border: none;
   background-image: linear-gradient(
       to right bottom,
@@ -583,11 +354,18 @@ body {
         rgba(120,120,120,0.8));
     padding: 0 10%;
     position: absolute;
-    top: 25%;
+    top: %;
     text-align: center;
     font-size: 18px;
     line-height: 36px;
-   
+    width:100%;
+    top: 50%;
+    left:50%;
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%); 
+   -ms-transform: translate(-50%, -50%); 
+   -o-transform: translate(-50%, -50%); 
+   transform: translate(-50%, -50%);
 }
 
 .icon-back{
@@ -598,7 +376,344 @@ body {
     top: 10%;
 }
 
-.icon-big-tech{
+.icon-big-tech{ 
+   
+}
+/*--------------END --------------------*/
+
+
+
+
+/*--------SECTION 5 - CONTACT ------------ --*/
+
+
+
+.section-5 {
+    padding: 260px 0px;
+    width:100%;
+    border:0;
+    height:80vh;
+    background-color: red;
+    background-image: linear-gradient(
+      to right bottom,
+        rgba(110,237,235,0.90),
+        rgba(119,252,135,0.90)),
+        url("gym-men-woman.jpg");
+    display: grid;
+    background-size: cover;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
+}
+
+.about-col {
+    padding-right:60px !important;
+}
+
+.about{
+    font-size: 60px;
+    font-family: Code-Pro-Demo; 
+    color: white;
+    text-align: left;
+}
+
+
+.about-description-text{
+    color: white;
+    font-size: 20px;
+    color: rgba(100,100,100,1); 
+}
+
+.contact {
+    font-size: 60px;
+    color: white;
+    font-family: Code-Pro-Demo;
+    text-align: left;
+}
+
+.email-us-text {
+    font-size: 20px;
+    color: rgba(100,100,100,1);
+    }
+
+
+/*--------------END--------------------*/
+
+
+/*--------------RESPONSIVE--------------------*/
+@media only screen and (max-width: 990px) {
+    
+    .tech-feature-title {
+        font-size: 16px;
+    }
+    
+}
+@media only screen and (max-width: 770px) {
+    
+    .tech-feature-title {
+        font-size: 14px;
+    }
+    
+    .feature-text{
+        font-size: 15px;
+    }
+    
+     .section-3 {
+    padding: 100px 0px;
+    margin-top: -110px;
+/*
+    width:100%;
+    border:0;
+    height:100%;
+    background-image: linear-gradient(
+      to right bottom,
+        rgba(110,237,235,0.85),
+        rgba(119,252,135,0.85)),
+        url("two-woman-plank.jpg");
+    background-size: cover;
+*/
+    clip-path: polygon(0 8%, 100% 0%, 100% 100%, 0 90%);
+}
+    
+    .section-5 {
+    padding: 30% 0px;
+/*
+    width:100%;
+    border:0;
+    height:80vh;
+    background-color: red;
+    background-image: linear-gradient(
+      to right bottom,
+        rgba(110,237,235,0.90),
+        rgba(119,252,135,0.90)),
+        url("gym-men-woman.jpg");
+    display: grid;
+    background-size: cover;
+*/
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
+}
+    
+}
+    
+
+@media only screen and (max-width: 580px) {
+    .feature-text{
+        font-size: 25px;
+        margin-bottom: 5px;
+        margin-top: 60px;
+    }
+    .mockup-card:hover { transform: scale(1); }
+    
+   
+    .section-2 { 
+    padding-top:60px;
+    clip-path: polygon(0 0,100% 2%, 100% 100%, 0 100%);
+}
+    .section-2-text{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    
+    .testimonials-text{
+        padding-top: 40px; 
+        font-size: 45px;
+        width: 100%;
+        text-align: center;
+   
+}
+    
+    .science-text {
+        padding-top: 20px; 
+        padding-bottom: 40px;
+        font-size: 45px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+}
+/*--------------END--------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------CONTAINERS-----------*/
+
+
+
+/*
+
+.testimonial-card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 250px;
+    padding:20px;
+    width: 80%;
+    background-color: rgba(250,250,250,0.9);
+    border-radius: 8px;
+    
+}
+*/
+/*
+
+.testimonial-card:hover { 
+    background-color: rgba(258,258,258,0.95);
+    
+}
+*/
+
+/*
+.testimonial {
+    transition: all .2s ease-in-out;
+}
+*/
+
+/*.testimonial:hover { transform: scale(1.1); }*/
+
+/*
+.testimonials {
+    display: flex;
+    align-content: center;
+}
+*/
+
+
+
+
+/*.tech-card:hover { transform: scale(1.2); }*/
+
+
+/*
+.tech-feature-cards{
+    margin-top: -60px;
+}
+*/
+
+
+/*--------------END--------------------*/
+
+
+
+/*--------TITLES, TEXT, ETC-----------*/
+
+
+/*
+.sub-title{
+    position: absolute;
+    top: 40%;
+    width:100%;
+    margin: 0 5%;
+    display: block;
+    text-align: center;
+    margin:0px;
+    padding-top: 15px;
+    color:white;
+    font-family: Code-Pro-Demo;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+*/
+
+
+
+
+
+
+/*
+.quote-testimonial{
+    text-align: center;
+    line-height: 25px;
+    color:  rgba(140,140,140,1);
+    font-size: 25px;
+    font-style: italic;
+}
+*/
+
+/*
+.testimonial-author-text{
+    padding-top: 20px;
+    font-family: Code-Pro-Demo; 
+    font-size: 20px;
+}
+*/
+
+
+
+
+
+
+/*--------------END--------------------*/
+
+
+
+/*-------IMAGES----------*/
+
+
+
+
+/*--------------END--------------------*/
+
+
+
+/*    border: solid 4px rgba(225,225,225,1);*/
+    
+}
+
+/*--------------END--------------------*/
+
+/*-------ADVANCED TAGS, VIDEOS, WIDGETS----------*/
+
+/*--------------END--------------------*/
+
+/*--------------TESTIMONIAL--------------------*/
+
+
+
+/* Demo purposes only */
+/*
+body {
+  background-color: #212121;
+}
+*/
+
+
+/*--------------END--------------------*/
+
+
+/*--------------FLIPPABLE-CARDS--------------------*/
+/*
+body {
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  margin: 12px 0;
+}
+*/
+
+
 /*
      background: -webkit-linear-gradient(45deg, rgba(50,177,175,1),  rgba(79,212,95,1));
   -webkit-background-clip: text;
@@ -616,22 +731,8 @@ body {
 /*---------RESPONSIVE PARTS----------*/
 
 
-@media only screen and (max-width: 600px) {
-    .main-title{
-        font-size: 22vw;
-      }
-    .sub-title{
-        font-size: 7vw;
-      }
-    }
 
-@media only screen and (max-width: 1500px) {
-    
-    .section-2{
-        height:110vh;
-    }
-}
-
+/*
 @media only screen and (max-width: 1000px) {
     
     
@@ -656,12 +757,14 @@ body {
         font-size: 18px;
     }
 }
+*/
 
+/*
 @media only screen and (max-width: 760px) {
     
     
-   .card-container {
-      transform: scale(0.95);
+   card-container {
+      transform: scale(0.95); 
       
 
     }
@@ -715,10 +818,10 @@ body {
     
 .mockup-card:hover { transform: scale(1.2); }
 }
+*/
 
 
-
-
+/*
 @media only screen and (max-width: 580px) {
     
     
@@ -726,28 +829,30 @@ body {
         padding-top: 0px;
         width:100vw;
         height:50vh;
-        display: flex;
-        align-content: center;
-        justify-content: center;
     }
     
      .section-2 {
+        margin-bottom: 90px;
         margin-top: -75px;
         padding-top: 70px;
-        width:100vw; 
+        width:100%; 
         height:255vh;
+         height: 100%;
         clip-path: polygon(0 0, 100% 2%, 100% 90%, 0 100%);
     }
     
     .mockup-card{
         width:100%;
-        padding:20px;
-        padding-bottom: 40px;  
-       transform: scale(0.9); 
+        padding:0px;
+        padding-bottom: 0px;  
+       transform: scale(0.8); 
 
     }
     
-    .mockup-card:hover {  pointer-events: none;}
+    .mockup-card:hover {transform: scale(1)}
+    
+    .feature-1-img:hover {transform: scale(1)}}
+
     
     .feature-text{
       font-size: 25px;   
@@ -764,7 +869,9 @@ body {
         margin-top: -220px;
         padding-top: 40px;
         width:100vw; 
-        height:170vh;  
+
+         height: 100%;
+         margin-bottom: 20%;
     }
     
     .testimonials-text{
@@ -774,9 +881,10 @@ body {
     }
     
     .section-4 {
-        margin-top: -140px;
+
         width:100vw; 
-        height:175vh; 
+
+        height: 100%;
         margin-bottom: 30px;
     }
     
@@ -786,7 +894,7 @@ body {
         padding-bottom: 80px;
     }
     .section-5 {
-        margin-top: -100px;
+
         padding-top: 80px;
         width:100vw; 
         height:70vh; 
@@ -794,18 +902,17 @@ body {
     }
     
     .about{
-        padding-top: 80px;
+        padding-top: 60px;
         font-size: 40px;
         padding-bottom: 0px;
     }
     
     .about-description-text{
-        padding: 0 20px ;
         font-size:20px;
         padding-bottom: 0px;
     }
     .contact {
-        padding-top:0px;
+        padding-top:60px;
          font-size: 40px;
         padding-bottom: 5px;
     }
@@ -816,8 +923,9 @@ body {
     
     .testimonial-card:hover {  pointer-events: none;}
       
-}
+} */
 
+/*
 @media only screen and (max-width: 390px) {
     
     .section-2 {
@@ -828,6 +936,9 @@ body {
         height:160vh;
     }
 }
+*/
 
 
 /*--------------END--------------------*/
+
+

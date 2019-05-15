@@ -42,14 +42,16 @@
   </style>
   <body>
 
-    <div class="video-container" id="vid">
-      <video autoplay muted loop id="myVideo">
-      <source src="background-vid.mp4" type="video/mp4">
-      </video>
-    </div>
+   
 
 
-      <div class="header">
+      <div class="section-1">
+          
+           <div class="video-container" id="vid">
+                <video autoplay muted loop id="myVideo">
+                <source src="background-vid.mp4" type="video/mp4">
+                </video>
+            </div>
 <!--        <div class="title-container">-->
                 <img class="main-title" src ="fitpic-logo-title-sub.png"/>
 <!--            <h1 class="main-title"> FitPic </h1>-->
@@ -110,16 +112,14 @@
 
 
       <div class="section-3">
-
-     <h1 class= "center testimonials-text">Testimonials</h1>
-          
-        
-
            <div class="container">
+               <div class="row">
+                    <h1 class= "center testimonials-text">Testimonials</h1>
+                </div>
                <div class="row">
                     <div class="col-sm-12 col-md-4">
 
-        <figure class="hover-enlarge snip1192">
+    <figure class="testimonials-container">
   <blockquote> Very useful. I use a bio-electric impedance scale, but if an app did that it would be sick</blockquote>
   <div class="author">
     <img src="Austin-Dunham.jpg" alt="sq-sample1"/>
@@ -136,7 +136,7 @@
 
                    <div class="col-sm-12 col-md-4">
 
-                       <figure class="hover-enlarge snip1192">
+                       <figure class="testimonials-container">
   <blockquote>I would love to see that app. That could go viral if it works.</blockquote>
   <div class="author">
     <img src="John-Sonmez-Small.jpg" alt="sq-sample29"/>
@@ -154,11 +154,11 @@
 
                 </div>
                  <div class="col-sm-12 col-md-4">
-<figure class="hover-enlarge snip1192">
+<figure class="testimonials-container">
   <blockquote>The app is easy to use and well tested (by me!)</blockquote>
   <div class="author">
     <img src="insta_final.jpg" alt="sq-sample24"/>
-      <h5>Hillary<span> Fitness influencer & Head of Testing @FitPic</span></h5>
+      <h5>Tiffany<span> Fitness influencer & Head of Testing @FitPic</span></h5>
   </div>
 </figure>
 <!--
@@ -178,20 +178,31 @@
 
       <div class="section-4">
           
+<!--
           <h1 class= "center science-text">Technology</h1>
           
-          <div class="container tech-feature-cards">
-              <div class="center-tech row">
-                  
-                   <div class="center-block col-xs-offset-4 col-xs-4 col-sm-4 col-md-4">
+          
+          
+-->
+          
+          
+           <div class="container">
+               <div class="row">
+                    <div class="col-12">
+                        <h1 class="center science-text"> Technology </h1>
+                       </div>
+
+               </div>
+               <div class="row">
+                   <div class="col-sm-4 col-md-4">
                        
                        <div class="card-container">
                            <div class="card">
                                <div class="side">
         
                                    <div class = "tech-card">
-                                       <p class= "center tech-feature-title">State-of-the-art Machine Learning</p>
-                                       <i class="icon-big-tech fas fa-9x fa-code-branch"></i> 
+                                       <p class= " tech-feature-title">State-of-the-art Machine Learning</p>
+                                       <i class="icon-big-tech fas fa-7x fa-code-branch"></i> 
                                        <p class="flip-text"> Hover to read more</p>
                                     </div>
                                </div>
@@ -203,27 +214,18 @@
                                </div>
                             </div>
                         </div>
-                       
-                    </div>
-                   
-                  
- <div class="col-xs-offset-4 col-xs-4 col-sm-4 col-md-4">
-
 
                       
-                      
-                      
-                  
-                               
-
-                      
+                   </div>
+                 <div class="col-sm-4 col-md-4">
+                     
                       <div class="card-container">
                            <div class="card">
                                <div class="side">
         
                                    <div class = "tech-card">
-                                       <p class= "center tech-feature-title">High-level Image Security</p>
-                                       <i class="icon-big-tech fas fa-9x fa-lock"></i>
+                                       <p class= "tech-feature-title">High-level <br/>Image Security </p>
+                                       <i class="icon-big-tech fas fa-7x fa-lock"></i>
                                        <p class="flip-text"> Hover to read more</p>
                                     </div>
                                </div>
@@ -235,26 +237,18 @@
                                </div>
                             </div>
                         </div>
-                      
-                      
-
+                     
+                     
                 </div>
-                  
-                  <div class="col-xs-offset-4 col-xs-4 col-sm-4 col-md-4">
-                  
+                 <div class="col-sm-4 col-md-4">
                      
-                      
-                     
-                            
-
-                     
-                      <div class="card-container">
+                     <div class="card-container">
                            <div class="card">
                                <div class="side">
         
                                    <div class = "tech-card">
-                                       <p class= "center tech-feature-title">New Computer Vision Techniques</p>
-                                       <i class="icon-big-tech fas fa-9x fa-search-plus"></i>
+                                       <p class= "tech-feature-title">New Computer Vision Techniques</p>
+                                       <i class="icon-big-tech fas fa-7x fa-search-plus"></i>
                                        <p class="flip-text"> Hover to read more</p>
                                     </div>
                                </div>
@@ -267,12 +261,10 @@
                             </div>
                         </div>
                      
-                     
-                     
-                     
+
                 </div>
               </div>
-            </div>
+          </div>
 
       </div>
      <div class="section-5">
@@ -309,7 +301,7 @@
           var currentScrollPos = window.pageYOffset;
 //          console.log("prev: " +prevScrollpos);
 //          console.log("curr: " +currentScrollPos);
-          if (600 > currentScrollPos) {
+          if (400 > currentScrollPos) {
         document.getElementById("vid").style.display = "block";
               console.log("show vid again yay");
          } else {
