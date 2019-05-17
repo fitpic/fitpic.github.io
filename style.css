@@ -19,14 +19,15 @@ body{
 
 .video-container{
     
-    width: 97%;
+/*    width: 100%;*/
     overflow:hidden;
+    object-fit: cover;
 /*    display:block;*/
     height: 100%;
     z-index: -1;
-    position: fixed;
+    position: relative;
     left: 0;
-    top: 0;
+    top: 0%;
 }
 
 video {
@@ -35,14 +36,16 @@ video {
   left: 0;
   top: 0;
   width: 100%;
-  transform:scale(3);
+  transform:scale(1.5);
 /*  max-height: 70vh;*/
    
 }
 
+
+
 .section-1 { 
     margin-top: 0px;
-    padding-top:5%;
+    padding-top:0%;
     width:100%;
     overflow: hidden;
     border:0;
@@ -85,36 +88,45 @@ video {
 /*--------SECTION 2 - HOW IT WORKS ------------ --*/
 
 .section-2 {
-    padding: 80px 0px;
+    padding-top:60px;
+    padding-bottom: 100px;
     margin-top: -90px;
     width:100%;
     border:0;
     height:100%;
-  
     background-color: white;
     clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);  
 }
 
 
 .section-2-text{
+    width: 100%;
     color:  rgba(140,140,140,1);
     font-family: Code-Pro-Demo; 
     font-size: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     text-align: center;
+/*
+    background-color: rgba(34,194,215,0.9);
+   
+    color: white;
+*/
+     margin-bottom: 40px;
 }
 
 .section-2-sub-text{ 
+    
     display: inline-block;
+/*
     background-color: rgba(34,194,215,0.9);
     color: white;
-/*    font-style: italic;*/
+*/
+    font-style: italic;
     font-size: 30px ;
     padding: 0px;
-    margin: 0;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+/*    margin-bottom: 40px;*/
     text-align: center;
 }
 
@@ -376,7 +388,7 @@ figure.testimonials-container .author h5 span {
     position: absolute;
     top: %;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 36px;
     width:100%;
     top: 50%;
@@ -519,6 +531,10 @@ figure.testimonials-container .author h5 span {
     
 
 @media only screen and (max-width: 580px) {
+    
+    .section-1{
+        height:40vh;
+    }
     .feature-text{
         font-size: 25px;
         margin-bottom: 5px;
@@ -526,13 +542,29 @@ figure.testimonials-container .author h5 span {
     }
     .mockup-card:hover { transform: scale(1); }
     
+    .mockup-card {
+/*        transform: scale(0.7);*/
+        padding: 0%;
+    }
+    
+    .main-title {
+        top:16%
+    }
    
     .section-2 { 
-    padding-top:60px;
+    padding-top:30px;
+        
     clip-path: polygon(0 0,100% 2%, 100% 100%, 0 100%);
+    
 }
+    
+    .section-2-sub-text{ 
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
     .section-2-text{
         padding-bottom: 0px;
+        font-size: 45px;
         margin-bottom: 0px;
         text-align: center;
     }
